@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+    <h1>Bienvenue DSI23</h1>
+    <img src="https://i.pinimg.com/736x/10/b5/d8/10b5d8e69bcb65c9762accac245e7626.jpg" alt="Tunisia image" style="width: 25%; height: auto; border:2px 2px solid #000;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    <p>Hello from Tunisia</p>
+    <p>it's currently {{ 'now'|date('Y-m-d H:i:s') }}</p>
+    
+    
+    
+    <a href="{{ path('about') }}">À propos</a>
+{% endblock %}
